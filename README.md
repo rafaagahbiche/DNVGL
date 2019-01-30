@@ -1,10 +1,8 @@
 
----
-### DNV GL Recruitment Assignment
----
+# DNV GL Recruitment Assignment
 
-# Author: Abderrafaa Gahbiche
-# Date: 30 Jan 2019
+### Author: Abderrafaa Gahbiche
+### Date: 30 Jan 2019
 
 ---
 ### The Solution contains these projects
