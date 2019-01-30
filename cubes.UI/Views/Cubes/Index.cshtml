@@ -1,0 +1,26 @@
+﻿@model cubes.Data.CubesSpace
+
+@{
+    ViewBag.Title = "Cubes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="cubesForm">
+    @Html.HiddenFor(model => model.Id)
+    <div class="links">
+        @Ajax.ActionLink(
+           "Add new cube",
+           "AddNewCube", null,
+           new AjaxOptions
+           {
+               HttpMethod = "GET",
+               InsertionMode = InsertionMode.InsertAfter,
+               UpdateTargetId = "cubes-space",
+               OnComplete = "setCalculateIntersection"
+           }, new { @class = "add-link" })
+        <a class="calculate-intersection disabled" href="@Url.Action("CalculateIntersection")">
+            <span>Calculate intersection</span>
+        </a>
+    </div>
+    <div id="cubes-space"></div>
+</div>

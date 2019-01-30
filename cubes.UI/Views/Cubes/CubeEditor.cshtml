@@ -1,0 +1,20 @@
+﻿@model cubes.Data.Cube
+
+<div class="cube">
+    <div>
+        @Html.LabelFor(model => model.X)
+        @Html.EditorFor(model => model.X)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Y)
+        @Html.EditorFor(model => model.Y)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Z)
+        @Html.EditorFor(model => model.Z)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Width)
+        @Html.EditorFor(model => model.Width)
+    </div>
+</div>
